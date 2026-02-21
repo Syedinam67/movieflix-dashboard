@@ -1,4 +1,4 @@
- /># Movieflix - Premium Movie Dashboard
+ # Movieflix - Premium Movie Dashboard
 
 A modern, responsive, and feature-rich movie dashboard built with **React (Frontend)** and **Flask (Backend)**. This project pulls data from the TMDB API to provide a cinematic experience similar to Netflix.
 
@@ -76,6 +76,7 @@ JWT_SECRET_KEY=your_secret_key
 
 ## 📸 Screenshots
 <img width="2859" height="1610" alt="Screenshot 2026-02-21 150929" src="https://github.com/user-attachments/assets/56e4b31c-014d-416d-a2eb-f0906fae47ae" />
+
 
 
 
