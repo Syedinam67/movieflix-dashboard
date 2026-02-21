@@ -1,0 +1,169 @@
+.landing-container {
+    height: 100vh;
+    width: 100vw;
+    background: url('https://images.unsplash.com/photo-1574267432553-4b4628081c31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.auth-card {
+    position: relative;
+    z-index: 1;
+    width: 400px;
+    padding: 40px;
+    border-radius: 8px;
+    animation: fadeIn 0.5s ease-out;
+}
+
+.glass {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.tabs {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--netflix-light-grey);
+}
+
+.tabs button {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-grey);
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tabs button.active {
+    color: var(--netflix-red);
+    border-bottom: 2px solid var(--netflix-red);
+}
+
+form h1 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    background: var(--netflix-light-grey);
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--netflix-red);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.2s;
+}
+
+.submit-btn:hover {
+    background-color: #f40612;
+}
+
+.error-message {
+    background: rgba(229, 9, 20, 0.2);
+    color: #ff4d4d;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid var(--netflix-red);
+    font-size: 14px;
+}
+
+.success-message {
+    background: rgba(46, 125, 50, 0.2);
+    color: #4caf50;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #4caf50;
+    font-size: 14px;
+}
+
+.forgot-password-link,
+.back-to-login {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.forgot-password-link span,
+.back-to-login span {
+    color: #b3b3b3;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.forgot-password-link span:hover,
+.back-to-login span:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.back-to-login {
+    text-align: center;
+}
+
+/* Social Auth Styles */
+.social-auth {
+    margin-top: 30px;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #b3b3b3;
+}
+
+.divider::before,
+.divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.divider span {
+    padding: 0 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.google-btn-container {
+    display: flex;
+    justify-content: center;
+}
